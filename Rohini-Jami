@@ -1,0 +1,10 @@
+module comp_1bit(E,G,L,A,B);
+input A,B;
+output E,G,L;
+wire w1,w2;
+not g1(w1,A);
+not g2(w2,B);
+and g3(L,w1,B);
+and g4(G,w2,A);
+xnor g5(E,A,B);
+endmodule
